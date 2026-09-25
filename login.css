@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #eef7ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 900px;
+    min-height: 550px;
+    background: white;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.login-image {
+    width: 50%;
+    background:
+        linear-gradient(rgba(20, 90, 40, 0.65), rgba(20, 90, 40, 0.65)),
+        url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    color: white;
+    padding: 30px;
+}
+
+.overlay h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.overlay p {
+    font-size: 18px;
+}
+
+.login-box {
+    width: 50%;
+    padding: 60px 50px;
+}
+
+.login-box h2 {
+    color: #246b35;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #3c9d50;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.remember {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: normal;
+}
+
+.options a,
+.signup a {
+    color: #2e8b3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #2e8b3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #246b35;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+}
+
+@media (max-width: 700px) {
+    .login-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .login-image {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .login-box {
+        width: 100%;
+        padding: 40px 30px;
+    }
+}
